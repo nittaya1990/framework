@@ -40,12 +40,12 @@ class Response extends SymfonyResponse
     /**
      * Set the content on the response.
      *
-     * @param  mixed  $content
+     * @param  string|null  $content
      * @return $this
      *
      * @throws \InvalidArgumentException
      */
-    public function setContent($content)
+    public function setContent(?string $content): static
     {
         $this->original = $content;
 
